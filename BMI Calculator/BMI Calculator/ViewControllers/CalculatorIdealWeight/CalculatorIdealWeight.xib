@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorIdealWeight" customModule="BMI_Calculator" customModuleProvider="target">
+            <connections>
+                <outlet property="ageField" destination="rxr-7L-JNO" id="ONO-0V-byA"/>
+                <outlet property="heightField" destination="Wiq-nr-LpK" id="VV5-1W-zxE"/>
+                <outlet property="resultLabel" destination="Uuz-js-ZHf" id="Ddq-Rp-flf"/>
+                <outlet property="segmentControl" destination="30v-WE-2lb" id="rp3-5r-axK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDEAL WEIGHT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAO-EX-R81">
+                    <rect key="frame" x="16" y="74" width="382" height="39"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="30v-WE-2lb">
+                    <rect key="frame" x="130" y="143" width="154" height="32"/>
+                    <segments>
+                        <segment title="Male"/>
+                        <segment title="Female"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentControlAction:" destination="-1" eventType="valueChanged" id="anM-g6-pMD"/>
+                    </connections>
+                </segmentedControl>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rxr-7L-JNO">
+                    <rect key="frame" x="16" y="227" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2r-Ty-22t">
+                    <rect key="frame" x="16" y="201" width="37.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wiq-nr-LpK">
+                    <rect key="frame" x="16" y="292" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOJ-0S-Q7g">
+                    <rect key="frame" x="16" y="266" width="60.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuz-js-ZHf">
+                    <rect key="frame" x="16" y="366" width="382" height="32.5"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="124-dx-stz">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <color key="backgroundColor" red="0.01448311708" green="0.21569593510000001" blue="0.5" alpha="0.78075848510000001" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="W3j-3p-QRb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="27"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="CALCULATE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="calculateButton:" destination="-1" eventType="touchUpInside" id="Je5-w4-7zB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VAO-EX-R81" secondAttribute="trailing" constant="16" id="19X-7v-upV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rxr-7L-JNO" secondAttribute="trailing" constant="16" id="3K9-dB-tMW"/>
+                <constraint firstItem="Wiq-nr-LpK" firstAttribute="top" secondItem="kOJ-0S-Q7g" secondAttribute="bottom" constant="5" id="4dJ-sO-BTe"/>
+                <constraint firstItem="Uuz-js-ZHf" firstAttribute="leading" secondItem="Wiq-nr-LpK" secondAttribute="leading" id="7rI-Fd-Guw"/>
+                <constraint firstItem="124-dx-stz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Uuz-js-ZHf" secondAttribute="bottom" constant="40" id="8R5-Ff-Mfz"/>
+                <constraint firstItem="M2r-Ty-22t" firstAttribute="leading" secondItem="rxr-7L-JNO" secondAttribute="leading" id="ApS-KK-0EI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="124-dx-stz" secondAttribute="bottom" id="DYA-Bc-lAW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uuz-js-ZHf" secondAttribute="trailing" constant="16" id="ElV-ou-Bw1"/>
+                <constraint firstItem="30v-WE-2lb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="130" id="Nly-hY-89f"/>
+                <constraint firstItem="30v-WE-2lb" firstAttribute="top" secondItem="VAO-EX-R81" secondAttribute="bottom" constant="30" id="QzX-i1-OEg"/>
+                <constraint firstItem="rxr-7L-JNO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TbS-OM-zrq"/>
+                <constraint firstItem="Uuz-js-ZHf" firstAttribute="top" secondItem="Wiq-nr-LpK" secondAttribute="bottom" constant="40" id="XEM-hk-Lse"/>
+                <constraint firstItem="VAO-EX-R81" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="XSS-aD-zzi"/>
+                <constraint firstItem="Wiq-nr-LpK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZSP-AO-kEP"/>
+                <constraint firstItem="kOJ-0S-Q7g" firstAttribute="leading" secondItem="Wiq-nr-LpK" secondAttribute="leading" id="bIa-N9-IDE"/>
+                <constraint firstItem="rxr-7L-JNO" firstAttribute="top" secondItem="M2r-Ty-22t" secondAttribute="bottom" constant="5" id="ba8-CK-fnU"/>
+                <constraint firstItem="rxr-7L-JNO" firstAttribute="top" secondItem="30v-WE-2lb" secondAttribute="bottom" constant="53" id="cov-sf-hL8"/>
+                <constraint firstItem="124-dx-stz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gJB-Na-vL6"/>
+                <constraint firstItem="Uuz-js-ZHf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="htr-wR-AaJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wiq-nr-LpK" secondAttribute="trailing" constant="16" id="md7-yb-ghI"/>
+                <constraint firstItem="kOJ-0S-Q7g" firstAttribute="top" secondItem="rxr-7L-JNO" secondAttribute="bottom" constant="5" id="pm5-bF-jM6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="124-dx-stz" secondAttribute="trailing" id="s4u-R0-8Et"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="30v-WE-2lb" secondAttribute="trailing" constant="130" id="vx1-GS-SWb"/>
+                <constraint firstItem="VAO-EX-R81" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="whg-cO-wL6"/>
+            </constraints>
+            <point key="canvasLocation" x="-39" y="-11"/>
+        </view>
+    </objects>
+</document>
